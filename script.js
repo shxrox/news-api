@@ -1,4 +1,4 @@
-const apikey = "ed521303b1764caca4f1c7fbf894fc08";
+const apikey = "api key";
 const blogContainer = document.getElementById("blog-container");
 const searchField =  document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
@@ -7,7 +7,7 @@ const searchButton = document.getElementById("search-button");
 
 async function fetchRandomNews() {
     try {
-        const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=12&apiKey=${apikey}`;
+        const apiUrl = `api URL`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         return data.articles;
